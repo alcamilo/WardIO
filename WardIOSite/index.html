@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link href="node_modules/bootstrap/compiler/style.css" rel="stylesheet"/>
+    <title>WardIO Smart System Health</title>
+  </head>
+  <body>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-info">
+          <div class="container">
+              <a class="navbar-brand mb-0" href="#">WardIO</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+          
+      </nav>
+      
+      <div class="row">
+            <div class="col-auto"> <!-- BPM Column -->
+                <div class="card text-white bg-gradient-danger mb-3" style="max-width: 18rem;">
+                    <div style="font-size: 20px;" class="card-header text-center" >BPM</div>
+                    <div class="card-body">
+                        <h1 id="BPM" style="font-size: 75px;" class="card-title text-sm-left">BPM</h1>
+                        <p class="card-text">Batimentos por minutos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto"> <!-- SpO2 Column -->
+                <div class="card text-white bg-gradient-primary mb-3" style="max-width: 18rem;">
+                    <div style="font-size: 20px;" class="card-header text-center">SpO2</div>
+                    <div class="card-body">
+                        <h1 id="SpO2" style="font-size: 70px; text-align: center;" class="card-title " ><span>%</span></h1>
+                        <p class="card-text">% de oxigenação do sangue.</p>
+                    </div>
+                </div>
+            </div>
+          <div class="col-auto"> <!-- Temperature Column -->
+                <div class="card text-white bg-gradient-success mb-3" style="max-width: 18rem;">
+                    <div style="font-size: 20px;" class="card-header text-center">Temperatura</div>
+                    <div class="card-body">
+                        <h1 id="Temperatura" style="font-size: 75px;" class="card-title"><span>°C</span></h1>
+                        <p class="card-text">Temperatura em graus Celsius.</p>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
