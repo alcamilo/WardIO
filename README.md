@@ -13,7 +13,7 @@ Uma página hospedada no Firebase e um banco de dados feito para este produto,</
 ela atualiza automaticamente a temperatura e envia para o firebase onde a página mostra em tempo real </br>
 os dados verificados pelos sensores.
 
-![](../imagens/WardIONano_bb.jpg)
+![](https://github.com/alcamilo/WardIO/blob/master/Imagens/WardIONano_bb.jpg)
 
 
 
