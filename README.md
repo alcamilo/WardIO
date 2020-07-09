@@ -1,11 +1,7 @@
 # WardIO
 SMART SYSTEM HEALTH
 # WardIO
-> Projeto de um sistema de Pulsação, Oximetria e termômetro.
-
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+> Projeto de um sistema de Pulsação, Oximetria e termômetro.</br></br>
 
 Este projeto consiste de um oximetro MAX30100 um sensor de temperatura SSD1306 um Arduino NaNo e um ESP32,</br> 
 ligados a internet através do wifi e com configuração automática.</br>
