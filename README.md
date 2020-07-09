@@ -14,6 +14,5 @@ ela atualiza automaticamente a temperatura e envia para o firebase onde a págin
 os dados verificados pelos sensores.
 
 <img src="./Imagens/WardIONano_bb.jpg" width="600" height="600" align="center"/>
->>>>>>> f3a5bdbd1afb624adabcf41039b060f9a8a55d1d
 
 
