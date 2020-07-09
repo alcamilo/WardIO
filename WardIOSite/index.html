@@ -14,21 +14,61 @@
   <body>
       
       <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-info">
-          <div class="container">
-              <a class="navbar-brand mb-0" href="#">WardIO</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          </div>
           
+          <div class="container">
+          
+              <a class="navbar-brand h1 mb-0" href="#">WardIO</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSite">
+
+                  <ul class="navbar-nav mr-auto">
+
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Perfil</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Serviços</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Depoimentos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Contatos</a>
+                      </li>
+
+                  </ul>
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                            Social  
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://github.com/alcamilo/WardIO">GitHUb</a>
+                        </div>
+                      </li>
+                  </ul>
+                  <form class="form-inline">
+                    <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-dark" type="Submit">OK</button>
+                  </form>
+
+              </div>
+          </div>
       </nav>
+
       
-      <div class="row">
+      <div class="row ml-4 mr-2">
             <div class="col-auto"> <!-- BPM Column -->
                 <div class="card text-white bg-gradient-danger mb-3" style="max-width: 18rem;">
                     <div style="font-size: 20px;" class="card-header text-center" >BPM</div>
                     <div class="card-body">
-                        <h1 id="BPM" style="font-size: 75px;" class="card-title text-sm-left">BPM</h1>
+                        <h1 id="BPM" style="font-size: 70px; text-align: right;" class="card-title text-sm-left">BPM</h1>
                         <p class="card-text">Batimentos por minutos.</p>
                     </div>
                 </div>
@@ -37,7 +77,7 @@
                 <div class="card text-white bg-gradient-primary mb-3" style="max-width: 18rem;">
                     <div style="font-size: 20px;" class="card-header text-center">SpO2</div>
                     <div class="card-body">
-                        <h1 id="SpO2" style="font-size: 70px; text-align: center;" class="card-title " ><span>%</span></h1>
+                        <h1 id="SpO2" style="font-size: 70px; text-align: right;" class="card-title " ><span>%</span></h1>
                         <p class="card-text">% de oxigenação do sangue.</p>
                     </div>
                 </div>
@@ -46,7 +86,7 @@
                 <div class="card text-white bg-gradient-success mb-3" style="max-width: 18rem;">
                     <div style="font-size: 20px;" class="card-header text-center">Temperatura</div>
                     <div class="card-body">
-                        <h1 id="Temperatura" style="font-size: 75px;" class="card-title"><span>°C</span></h1>
+                        <h1 id="Temperatura" style="font-size: 70px; text-align: right" class="card-title"><span>°C</span></h1>
                         <p class="card-text">Temperatura em graus Celsius.</p>
                     </div>
                 </div>
