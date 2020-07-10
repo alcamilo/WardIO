@@ -4,35 +4,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet"
               href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
               integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
               crossorigin="anonymous">
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
-    <!--link href="node_modules/bootstrap/compiler/style.css" rel="stylesheet"/-->
+    <link href="style.css" rel="stylesheet"/>
     <title>WardIO Smart System Health</title>
-      
-    <style>
-        body{    
-            background-color: #696969;
-                background-image: 
-            /* top image*/
-            linear-gradient(to bottom, rgba(0, 0, 0, 1) 20%, rgba(100, 51, 51, 0.6) 86%, rgba(51, 51, 51, 0.8) 100%),
-            /*bottom image*/
-            url('https://github.com/alcamilo/WardIO/raw/master/WardIOSite/img/dna.jpg') !important;
-            /*background-size: auto;*/
-            background-repeat: no-repeat;
-        }
-        .card{
-            margin: 0 auto;
-            float: none;
-            margin-botton: 10px;
-            margin-top: 50px;
-        }
-      </style>
   </head>
   <body>
 
@@ -40,7 +19,7 @@
           
           <div class="container">
           
-              <a class="navbar-brand h1 mb-0" href="#">WardIO</a>
+              <a class="navbar-brand h1 mb-0" href="https://wardio42.web.app/">WardIO</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -50,19 +29,19 @@
                   <ul class="navbar-nav mr-auto">
 
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Inicio</a>
+                          <a class="nav-link" href="https://wardio42.web.app/">Inicio</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Perfil</a>
+                          <a class="nav-link" href="404.html">Perfil</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Serviços</a>
+                          <a class="nav-link" href="404.html">Serviços</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Depoimentos</a>
+                          <a class="nav-link" href="404.html">Depoimentos</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Contatos</a>
+                          <a class="nav-link" href="404.html">Contatos</a>
                       </li>
 
                   </ul>
@@ -71,51 +50,50 @@
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
                             Social  
                         </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="https://github.com/alcamilo/WardIO">GitHUb</a>
+                        <div class="dropdown-menu bg-info">
+                            <a class="dropdown-item text-dark " href="https://github.com/alcamilo/WardIO">GitHUb</a>
                         </div>
                       </li>
                   </ul>
-                  <form class="form-inline">
-                    <input class="form-control bg-light ml-4 mr-2" type="search" placeholder="Buscar...">
-                    <button class="btn-dark btn-default" type="Submit">OK</button>
-                  </form>
+           
 
               </div>
           </div>
       </nav>
-
+ 
       
-      <div class="row ml-4 mr-2">
-            <div class="col-auto"> <!-- BPM Column -->
-                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-                    <div style="font-size: 20px;" class="card-header text-center" >BPM</div>
-                    <div class="card-body">
-                        <h1 id="BPM" style="font-size: 70px; text-align: right;" class="card-title text-sm-left">BPM</h1>
-                        <p class="card-text">Batimentos por minutos.</p>
+      <div class="container-fluid content-row">
+          <div class="row">
+                <div class="col-sm-4"> <!-- BPM Column -->
+                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;" id="bpmcard">
+                        <div style="font-size: 20px;" class="card-header text-center rounded-circle" >BPM</div>
+                        <div class="card-body  h-100 w-100">
+                            <h1 id="BPM" style="font-size: 70px; text-align:center;" class="card-title text-sm-center">BPM</h1>
+                            <p class="card-text text-center" style="font-size:50px">   BPM   </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-auto"> <!-- SpO2 Column -->
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div style="font-size: 20px;" class="card-header text-center">SpO2</div>
-                    <div class="card-body">
-                        <h1 id="SpO2" style="font-size: 70px; text-align: right;" class="card-title " ><span>%</span></h1>
-                        <p class="card-text">% de oxigenação do sangue.</p>
+                <div class="col-sm-4"> <!-- SpO2 Column -->
+                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div style="font-size: 20px;" class="card-header text-center rounded-circle">SpO2</div>
+                        <div class="card-body">
+                            <h1 id="SpO2" style="font-size: 70px; text-align: center;" class="card-title text-sm-center" ><span>%</span></h1>
+                            <p class="card-text text-center" style="font-size:50px">    %    </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-          <div class="col-auto"> <!-- Temperature Column -->
-                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                    <div style="font-size: 20px;" class="card-header text-center">Temperatura</div>
-                    <div class="card-body">
-                        <h1 id="Temperatura" style="font-size: 70px; text-align: right" class="card-title"><span>°C</span></h1>
-                        <p class="card-text">Temperatura em graus Celsius.</p>
+              <div class="col-sm-4"> <!-- Temperature Column -->
+                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                        <div style="font-size: 20px;" class="card-header text-center rounded-circle">Temperatura</div>
+                        <div class="card-body">
+                            <h1 id="Temperatura" style="font-size: 70px; text-align: center" class="card-title text-sm-center"><span>°C</span></h1>
+                            <p class="card-text text-center" style="font-size:50px">    °C    </p>
+                        </div>
                     </div>
-                </div>
               
             </div>
         </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
