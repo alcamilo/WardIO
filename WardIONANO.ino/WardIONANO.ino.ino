@@ -23,7 +23,6 @@ void pulso()
 void setup() {
   Serial.begin(9600);
   Wire.begin();
-  Wire.setClock(400000);
   if(!pox.begin())
   {
     Serial.println("Erro ao inicializar o Sensor");

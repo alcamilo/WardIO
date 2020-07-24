@@ -24,7 +24,7 @@
 #define   BT_DOWN                 26          //Porta do Botão DOWN
 #define   BT_ENTER                27          //Porta do Botão ENTER
 #define FIREBASE_HOST             "wardio42.firebaseio.com"
-#define FIREBASE_AUTH             "xXYerlIQicNQsa5tUOvzzJUoi2ds3BIKI6VFZsJ7"
+#define FIREBASE_AUTH             ""
 
 DynamicJsonDocument doc(200);
 SoftwareSerial pox(RXPIN, TXPIN);
